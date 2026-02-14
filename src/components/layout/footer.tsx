@@ -18,7 +18,6 @@ export function Footer() {
                 height={48}
                 className="bg-white p-1 rounded"
               />
-              
             </Link>
             <p className="text-sm text-gray-300">
               Ivoire Assurance de Conseil et Courtage - Votre partenaire de
@@ -64,6 +63,14 @@ export function Footer() {
                   className="text-sm text-gray-300 transition-colors hover:text-[#e86924]"
                 >
                   Pourquoi un courtier
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/temoignages"
+                  className="text-sm text-gray-300 transition-colors hover:text-[#e86924]"
+                >
+                  Témoignages clients
                 </Link>
               </li>
               <li>

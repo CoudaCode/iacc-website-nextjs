@@ -2,7 +2,12 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FadeInUp, ScaleIn, StaggerContainer, StaggerItem } from "@/components/ui/motion-wrapper";
+import {
+  FadeInUp,
+  ScaleIn,
+  StaggerContainer,
+  StaggerItem,
+} from "@/components/ui/motion-wrapper";
 import { contactInfo } from "@/lib/constants/services";
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 
@@ -47,15 +52,21 @@ export function Contact() {
                     <Phone className="h-8 w-8 text-[#00516f]" />
                   </div>
                   <div className="text-center">
-                    <h3 className="font-bold text-lg text-[#00516f]">Appelez-nous</h3>
-                    <p className="text-sm text-gray-500 mb-4">Du lundi au vendredi, 8h-18h</p>
+                    <h3 className="font-bold text-lg text-[#00516f]">
+                      Appelez-nous
+                    </h3>
+                    <p className="text-sm text-gray-500 mb-4">
+                      Du lundi au vendredi, 8h-18h
+                    </p>
                   </div>
                   <div className="flex flex-col gap-2 w-full">
                     <Button
                       className="w-full bg-[#00516f] hover:bg-[#003a4f]"
                       asChild
                     >
-                      <a href={`tel:+225${contactInfo.phone.replace(/\s/g, "")}`}>
+                      <a
+                        href={`tel:+225${contactInfo.phone.replace(/\s/g, "")}`}
+                      >
                         <Phone className="mr-2 h-4 w-4" />
                         {contactInfo.phone}
                       </a>
@@ -65,7 +76,9 @@ export function Contact() {
                       className="w-full border-[#00516f] text-[#00516f] hover:bg-[#00516f] hover:text-white"
                       asChild
                     >
-                      <a href={`tel:+225${contactInfo.mobile.replace(/\s/g, "")}`}>
+                      <a
+                        href={`tel:+225${contactInfo.mobile.replace(/\s/g, "")}`}
+                      >
                         <Phone className="mr-2 h-4 w-4" />
                         {contactInfo.mobile}
                       </a>
@@ -83,8 +96,12 @@ export function Contact() {
                     <MessageCircle className="h-8 w-8 text-[#25D366]" />
                   </div>
                   <div className="text-center">
-                    <h3 className="font-bold text-lg text-[#00516f]">WhatsApp</h3>
-                    <p className="text-sm text-gray-500 mb-4">Réponse rapide garantie</p>
+                    <h3 className="font-bold text-lg text-[#00516f]">
+                      WhatsApp
+                    </h3>
+                    <p className="text-sm text-gray-500 mb-4">
+                      Réponse rapide garantie
+                    </p>
                   </div>
                   <Button
                     size="lg"
@@ -113,7 +130,9 @@ export function Contact() {
                   </div>
                   <div className="text-center">
                     <h3 className="font-bold text-lg text-[#00516f]">Email</h3>
-                    <p className="text-sm text-gray-500 mb-4">Réponse sous 24h</p>
+                    <p className="text-sm text-gray-500 mb-4">
+                      Réponse sous 24h
+                    </p>
                   </div>
                   <Button
                     size="lg"
