@@ -3,15 +3,15 @@
 import { Button } from "@/components/ui/button";
 import { services } from "@/lib/constants/services";
 import { cn } from "@/lib/utils";
-import { AnimatePresence, motion } from "motion/react";
 import { ArrowRight, ChevronLeft, ChevronRight, Shield } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
 import { useCallback, useEffect, useState } from "react";
 
 // Images locales pour chaque service
 const serviceImages: Record<string, string> = {
   auto: "/images/banner/auto.jpg",
   "multirisque-professionnelle": "/images/banner/auto.jpg", // À remplacer par banner-pro.jpg
-  "multirisque-habitation": "/images/banner/habitation.jpg",
+  // "multirisque-habitation": "/images/banner/habitation.jpg",
   "epargne-assurance-vie": "/images/banner/vie.jpg",
   sante: "/images/banner/sante.jpg",
   "responsabilite-civile": "/images/banner/habitation.jpg", // À remplacer par banner-rc.jpg
@@ -48,7 +48,6 @@ export function HeroSlider() {
     setCurrentIndex(index);
   };
 
-  
   useEffect(() => {
     if (!isAutoPlaying) return;
     const interval = setInterval(nextSlide, 5000);
@@ -101,7 +100,7 @@ export function HeroSlider() {
         {[...Array(8)].map((_, i) => (
           <motion.div
             key={i}
-            className={`absolute w-2 h-2 rounded-full ${i % 2 === 0 ? 'bg-[#00516f]/30' : 'bg-[#e86924]/30'}`}
+            className={`absolute w-2 h-2 rounded-full ${i % 2 === 0 ? "bg-[#00516f]/30" : "bg-[#e86924]/30"}`}
             style={{
               left: `${10 + i * 12}%`,
               top: `${20 + (i % 3) * 25}%`,
@@ -119,7 +118,7 @@ export function HeroSlider() {
           />
         ))}
       </div>
-      
+
       <AnimatePresence initial={false} custom={direction}>
         <motion.div
           key={currentIndex}
@@ -135,9 +134,9 @@ export function HeroSlider() {
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${currentSlide.image})` }}
           />
-         
+
           <div className="absolute inset-0 bg-gradient-to-r from-[#00516f]/95 via-[#00516f]/80 to-[#00516f]/40" />
-          
+
           {/* Effet de vague animé avec couleur pure */}
           <motion.div
             className="absolute inset-0 bg-[#00516f]/10"
@@ -162,7 +161,11 @@ export function HeroSlider() {
               >
                 <motion.div
                   animate={{ rotate: [0, 360] }}
-                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                  transition={{
+                    duration: 20,
+                    repeat: Infinity,
+                    ease: "linear",
+                  }}
                 >
                   <Shield className="h-4 w-4 text-[#e86924]" />
                 </motion.div>
@@ -178,7 +181,7 @@ export function HeroSlider() {
                     animate="visible"
                     className={cn(
                       "inline-flex items-center gap-3 rounded-xl px-4 py-2 backdrop-blur-sm border border-white/20",
-                      currentSlide.color
+                      currentSlide.color,
                     )}
                     whileHover={{ scale: 1.05, y: -2 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -265,15 +268,30 @@ export function HeroSlider() {
               <AnimatePresence mode="wait">
                 <motion.div
                   key={currentIndex}
-                  initial={{ opacity: 0, scale: 0.9, rotateY: -15, filter: "blur(10px)" }}
-                  animate={{ opacity: 1, scale: 1, rotateY: 0, filter: "blur(0px)" }}
-                  exit={{ opacity: 0, scale: 0.9, rotateY: 15, filter: "blur(5px)" }}
+                  initial={{
+                    opacity: 0,
+                    scale: 0.9,
+                    rotateY: -15,
+                    filter: "blur(10px)",
+                  }}
+                  animate={{
+                    opacity: 1,
+                    scale: 1,
+                    rotateY: 0,
+                    filter: "blur(0px)",
+                  }}
+                  exit={{
+                    opacity: 0,
+                    scale: 0.9,
+                    rotateY: 15,
+                    filter: "blur(5px)",
+                  }}
                   transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-                  whileHover={{ 
-                    y: -10, 
+                  whileHover={{
+                    y: -10,
                     rotateY: 5,
                     scale: 1.02,
-                    transition: { type: "spring", stiffness: 300, damping: 20 }
+                    transition: { type: "spring", stiffness: 300, damping: 20 },
                   }}
                   className="w-full max-w-md rounded-3xl bg-white/10 p-8 backdrop-blur-md border border-white/20 shadow-2xl"
                 >
@@ -283,23 +301,36 @@ export function HeroSlider() {
                     whileHover={{ opacity: 1 }}
                     transition={{ duration: 0.3 }}
                   />
-                  
+
                   <div className="relative">
-                    <motion.div 
-                      className={cn("mb-6 inline-flex rounded-2xl p-4", currentSlide.color)}
+                    <motion.div
+                      className={cn(
+                        "mb-6 inline-flex rounded-2xl p-4",
+                        currentSlide.color,
+                      )}
                       whileHover={{ scale: 1.1, rotate: 5 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
                     >
                       <Icon className="h-12 w-12 text-white" />
                     </motion.div>
                     <h3 className="mb-4 font-bold text-2xl text-white">
                       {currentSlide.fullTitle}
                     </h3>
-                    <p className="mb-6 text-gray-200">{currentSlide.description}</p>
-                    <motion.div 
+                    <p className="mb-6 text-gray-200">
+                      {currentSlide.description}
+                    </p>
+                    <motion.div
                       className="flex items-center gap-2 text-[#e86924]"
                       whileHover={{ x: 5 }}
-                      transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                      transition={{
+                        type: "spring",
+                        stiffness: 400,
+                        damping: 10,
+                      }}
                     >
                       <span className="font-medium">En savoir plus</span>
                       <ArrowRight className="h-4 w-4" />
@@ -344,7 +375,7 @@ export function HeroSlider() {
                 "group flex shrink-0 items-center gap-2 rounded-full px-3 py-2 transition-all backdrop-blur-sm border",
                 index === currentIndex
                   ? "bg-white text-[#00516f] border-white/30"
-                  : "bg-white/20 text-white hover:bg-white/30 border-white/20"
+                  : "bg-white/20 text-white hover:bg-white/30 border-white/20",
               )}
               aria-label={`Aller au slide ${slide.title}`}
               whileHover={{ scale: 1.05, y: -2 }}
@@ -359,7 +390,9 @@ export function HeroSlider() {
               <span
                 className={cn(
                   "overflow-hidden font-medium text-sm transition-all whitespace-nowrap hidden sm:block",
-                  index === currentIndex ? "w-auto max-w-[100px]" : "w-0 max-w-0"
+                  index === currentIndex
+                    ? "w-auto max-w-[100px]"
+                    : "w-0 max-w-0",
                 )}
               >
                 {slide.title}

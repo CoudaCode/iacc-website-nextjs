@@ -13,15 +13,17 @@ yarn add motion
 ## 📦 Composants Disponibles
 
 ### 1. BackgroundEffects
+
 Effets de fond avec particules animées et grille.
 
 ```tsx
 import { BackgroundEffects } from "@/components/animations";
 
-<BackgroundEffects />
+<BackgroundEffects />;
 ```
 
 ### 2. HeroSection
+
 Section hero complète avec parallax et animations.
 
 ```tsx
@@ -33,10 +35,11 @@ import { HeroSection } from "@/components/animations";
   icon="🛡️"
   buttonText="Call to Action"
   mousePosition={mousePosition}
-/>
+/>;
 ```
 
 ### 3. ServiceCard
+
 Card de service avec effet glassmorphism et animations hover.
 
 ```tsx
@@ -48,32 +51,35 @@ import { ServiceCard } from "@/components/animations";
   icon="🚗"
   color="from-blue-500 to-cyan-500"
   index={0}
-/>
+/>;
 ```
 
 ### 4. GlassButton
+
 Bouton avec effet de verre et animations.
 
 ```tsx
 import { GlassButton } from "@/components/animations";
 
-<GlassButton 
-  text="Cliquez ici" 
+<GlassButton
+  text="Cliquez ici"
   primary={true}
-  onClick={() => console.log('clicked')}
-/>
+  onClick={() => console.log("clicked")}
+/>;
 ```
 
 ### 5. SectionTitle
+
 Titre de section avec animation d'apparition.
 
 ```tsx
 import { SectionTitle } from "@/components/animations";
 
-<SectionTitle>Mon Titre</SectionTitle>
+<SectionTitle>Mon Titre</SectionTitle>;
 ```
 
 ### 6. ScrollReveal
+
 Composant utilitaire pour animer l'apparition au scroll.
 
 ```tsx
@@ -81,34 +87,33 @@ import { ScrollReveal } from "@/components/animations";
 
 <ScrollReveal direction="up" delay={0.2}>
   <div>Contenu à animer</div>
-</ScrollReveal>
+</ScrollReveal>;
 ```
 
 ### 7. AnimatedCounter
+
 Compteur animé pour les statistiques.
 
 ```tsx
 import { AnimatedCounter } from "@/components/animations";
 
-<AnimatedCounter 
-  value={2015} 
-  suffix="+"
-  className="text-4xl font-bold"
-/>
+<AnimatedCounter value={2015} suffix="+" className="text-4xl font-bold" />;
 ```
 
 ### 8. FloatingParticles
+
 Particules flottantes pour l'ambiance.
 
 ```tsx
 import { FloatingParticles } from "@/components/animations";
 
-<FloatingParticles count={5} color="bg-blue-400" />
+<FloatingParticles count={5} color="bg-blue-400" />;
 ```
 
 ## 🎨 Templates Complets
 
 ### ServicePageTemplate
+
 Template complet pour les pages de service.
 
 ```tsx
@@ -130,17 +135,19 @@ const serviceData = {
 ```
 
 ### ContactPage
+
 Page de contact complète avec formulaire animé.
 
 ```tsx
 import { ContactPage } from "@/components/animations";
 
-<ContactPage />
+<ContactPage />;
 ```
 
 ## 🎯 Hooks Utilitaires
 
 ### useMousePosition
+
 Hook pour suivre la position de la souris.
 
 ```tsx
@@ -152,6 +159,7 @@ const mousePosition = useMousePosition();
 ## 🎨 Constantes de Style
 
 ### Couleurs
+
 ```tsx
 import { colors } from "@/components/animations";
 
@@ -160,6 +168,7 @@ import { colors } from "@/components/animations";
 ```
 
 ### Easings
+
 ```tsx
 import { easings } from "@/components/animations";
 
@@ -174,13 +183,13 @@ import { easings } from "@/components/animations";
 ```tsx
 "use client";
 
-import { 
-  BackgroundEffects, 
-  HeroSection, 
-  ServiceCard, 
+import {
+  BackgroundEffects,
+  HeroSection,
+  ServiceCard,
   SectionTitle,
   useMousePosition,
-  colors 
+  colors,
 } from "@/components/animations";
 
 export default function MaPage() {
@@ -189,7 +198,7 @@ export default function MaPage() {
   return (
     <div className="relative bg-black text-white min-h-screen">
       <BackgroundEffects />
-      
+
       <HeroSection
         title="IACC"
         subtitle="Votre partenaire assurance"
@@ -218,18 +227,20 @@ export default function MaPage() {
 ## 🔧 Personnalisation
 
 ### Couleurs par Service
+
 ```tsx
 const colors = {
   services: {
     automobile: "from-blue-500 to-cyan-500",
-    habitation: "from-orange-500 to-red-500",
+    // habitation: "from-orange-500 to-red-500",
     sante: "from-teal-500 to-cyan-500",
     // ...
-  }
+  },
 };
 ```
 
 ### Glassmorphism
+
 ```tsx
 const glassStyle = {
   background: "rgba(255, 255, 255, 0.03)",

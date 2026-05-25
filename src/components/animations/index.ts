@@ -1,17 +1,17 @@
 // Export all animation components
-export { BackgroundEffects } from './background-effects';
-export { GlassButton } from './glass-button';
-export { ServiceCard } from './service-card';
-export { SectionTitle } from './section-title';
-export { HeroSection } from './hero-section';
-export { ServicePageTemplate } from './service-page-template';
-export { ContactPage } from './contact-page';
-export { ScrollReveal } from './scroll-reveal';
-export { AnimatedCounter } from './animated-counter';
-export { FloatingParticles } from './floating-particles';
+export { AnimatedCounter } from "./animated-counter";
+export { BackgroundEffects } from "./background-effects";
+export { ContactPage } from "./contact-page";
+export { FloatingParticles } from "./floating-particles";
+export { GlassButton } from "./glass-button";
+export { HeroSection } from "./hero-section";
+export { ScrollReveal } from "./scroll-reveal";
+export { SectionTitle } from "./section-title";
+export { ServiceCard } from "./service-card";
+export { ServicePageTemplate } from "./service-page-template";
 
 // Export hooks
-export { useMousePosition } from './use-mouse-position';
+export { useMousePosition } from "./use-mouse-position";
 
 // Animation utilities and constants
 export const colors = {
@@ -23,7 +23,7 @@ export const colors = {
   services: {
     automobile: "bg-[#00516f]",
     professionnel: "bg-[#e86924]",
-    habitation: "bg-[#00516f]",
+    // habitation: "bg-[#00516f]",
     epargne: "bg-[#e86924]",
     sante: "bg-[#00516f]",
     rc: "bg-[#e86924]",

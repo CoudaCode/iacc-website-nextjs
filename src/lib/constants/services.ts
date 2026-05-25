@@ -2,11 +2,10 @@ import {
   Building2,
   Car,
   Heart,
-  Home,
   Plane,
   Shield,
   Stethoscope,
-  type LucideIcon
+  type LucideIcon,
 } from "lucide-react";
 
 export interface Service {
@@ -150,13 +149,11 @@ export const services: Service[] = [
       },
       {
         title: "Commerçants",
-        description:
-          "Boutiques, magasins et commerces de toutes tailles.",
+        description: "Boutiques, magasins et commerces de toutes tailles.",
       },
       {
         title: "Artisans",
-        description:
-          "Professionnels indépendants avec local et équipements.",
+        description: "Professionnels indépendants avec local et équipements.",
       },
     ],
     whyIACC: [
@@ -182,64 +179,64 @@ export const services: Service[] = [
       },
     ],
   },
-  {
-    slug: "multirisque-habitation",
-    title: "Multirisque Habitation",
-    shortTitle: "Habitation",
-    description:
-      "Protégez votre logement et vos biens contre tous les risques du quotidien.",
-    icon: Home,
-    color: "bg-amber-500",
-    coverages: [
-      "Biens immobiliers",
-      "Biens mobiliers",
-      "Objets de valeur",
-      "Électroménager",
-      "Matériel informatique",
-      "Responsabilité civile vie privée",
-      "Dégâts des eaux",
-      "Incendie et explosions",
-    ],
-    targetAudience: [
-      {
-        title: "Propriétaires",
-        description:
-          "Protection complète de votre bien immobilier et de son contenu.",
-      },
-      {
-        title: "Locataires",
-        description:
-          "Couverture obligatoire et protection de vos effets personnels.",
-      },
-      {
-        title: "Copropriétaires",
-        description:
-          "Assurance adaptée aux spécificités de la copropriété.",
-      },
-    ],
-    whyIACC: [
-      "Évaluation précise de vos biens pour une couverture optimale",
-      "Assistance 24h/24 en cas de sinistre",
-      "Indemnisation rapide et accompagnement personnalisé",
-    ],
-    faq: [
-      {
-        question: "L'assurance habitation est-elle obligatoire ?",
-        answer:
-          "Elle est obligatoire pour les locataires et fortement recommandée pour les propriétaires.",
-      },
-      {
-        question: "Mes objets de valeur sont-ils couverts ?",
-        answer:
-          "Oui, avec une déclaration spécifique. Nous vous conseillons sur les garanties adaptées.",
-      },
-      {
-        question: "Que faire en cas de dégât des eaux ?",
-        answer:
-          "Coupez l'eau, prenez des photos et contactez-nous immédiatement. Nous gérons le reste.",
-      },
-    ],
-  },
+  // {
+  //   slug: "multirisque-habitation",
+  //   title: "Multirisque Habitation",
+  //   shortTitle: "Habitation",
+  //   description:
+  //     "Protégez votre logement et vos biens contre tous les risques du quotidien.",
+  //   icon: Home,
+  //   color: "bg-amber-500",
+  //   coverages: [
+  //     "Biens immobiliers",
+  //     "Biens mobiliers",
+  //     "Objets de valeur",
+  //     "Électroménager",
+  //     "Matériel informatique",
+  //     "Responsabilité civile vie privée",
+  //     "Dégâts des eaux",
+  //     "Incendie et explosions",
+  //   ],
+  //   targetAudience: [
+  //     {
+  //       title: "Propriétaires",
+  //       description:
+  //         "Protection complète de votre bien immobilier et de son contenu.",
+  //     },
+  //     {
+  //       title: "Locataires",
+  //       description:
+  //         "Couverture obligatoire et protection de vos effets personnels.",
+  //     },
+  //     {
+  //       title: "Copropriétaires",
+  //       description:
+  //         "Assurance adaptée aux spécificités de la copropriété.",
+  //     },
+  //   ],
+  //   whyIACC: [
+  //     "Évaluation précise de vos biens pour une couverture optimale",
+  //     "Assistance 24h/24 en cas de sinistre",
+  //     "Indemnisation rapide et accompagnement personnalisé",
+  //   ],
+  //   faq: [
+  //     {
+  //       question: "L'assurance habitation est-elle obligatoire ?",
+  //       answer:
+  //         "Elle est obligatoire pour les locataires et fortement recommandée pour les propriétaires.",
+  //     },
+  //     {
+  //       question: "Mes objets de valeur sont-ils couverts ?",
+  //       answer:
+  //         "Oui, avec une déclaration spécifique. Nous vous conseillons sur les garanties adaptées.",
+  //     },
+  //     {
+  //       question: "Que faire en cas de dégât des eaux ?",
+  //       answer:
+  //         "Coupez l'eau, prenez des photos et contactez-nous immédiatement. Nous gérons le reste.",
+  //     },
+  //   ],
+  // },
   {
     slug: "epargne-assurance-vie",
     title: "Épargne & Assurance Vie",
@@ -319,8 +316,7 @@ export const services: Service[] = [
     targetAudience: [
       {
         title: "Particuliers",
-        description:
-          "Couverture santé individuelle adaptée à vos besoins.",
+        description: "Couverture santé individuelle adaptée à vos besoins.",
       },
       {
         title: "Familles",
@@ -329,8 +325,7 @@ export const services: Service[] = [
       },
       {
         title: "Entreprises",
-        description:
-          "Assurance santé collective pour vos collaborateurs.",
+        description: "Assurance santé collective pour vos collaborateurs.",
       },
     ],
     whyIACC: [
@@ -377,8 +372,7 @@ export const services: Service[] = [
     targetAudience: [
       {
         title: "Particuliers",
-        description:
-          "Protection contre les accidents de la vie quotidienne.",
+        description: "Protection contre les accidents de la vie quotidienne.",
       },
       {
         title: "Professionnels",
@@ -387,8 +381,7 @@ export const services: Service[] = [
       },
       {
         title: "Associations",
-        description:
-          "Protection des dirigeants et des activités associatives.",
+        description: "Protection des dirigeants et des activités associatives.",
       },
     ],
     whyIACC: [
@@ -445,8 +438,7 @@ export const services: Service[] = [
       },
       {
         title: "Étudiants",
-        description:
-          "Assurance pour vos études ou stages à l'international.",
+        description: "Assurance pour vos études ou stages à l'international.",
       },
     ],
     formulas: [
@@ -510,20 +502,48 @@ export const services: Service[] = [
 ];
 
 export const partners = [
-  { name: "Sanlam", logo: "/images/partners/sanlam.png" },
-  { name: "Allianz Côte d'Ivoire", logo: "/images/partners/allianz.png" },
-  { name: "SUNU", logo: "/images/partners/sunu.png" },
-  { name: "ATLANTIQUE", logo: "/images/partners/atlantique.png" },
-  { name: "NSIA", logo: "/images/partners/nsia.png" },
-  { name: "Wafa Assurance", logo: "/images/partners/wafa.png" },
-  { name: "MCL Care Côte d'Ivoire", logo: "/images/partners/mclcare.png" },
+  { name: "Allianz", logo: "/images/partners/logo_sanlam_allianz.png" },
+  { name: "AXA", logo: "/images/partners/logo_axa.jpg" },
+  { name: "NSIA Assurances", logo: "/images/partners/logo_nsia.png" },
+  { name: "SAM Assurances", logo: "/images/partners/logo_saar.webp" },
+  { name: "SUNU Assurances", logo: "/images/partners/logo_sunu.webp" },
+  {
+    name: "Atlantique Assurances",
+    logo: "/images/partners/logo_atlantique.png",
+  },
+  { name: "Wafa Assurance", logo: "/images/partners/logo_wafa.jpg" },
+  { name: "MCI Care Côte d'Ivoire", logo: "/images/partners/logo_mci.png" },
+  { name: "AFG Assurances", logo: "/images/partners/logo_afg.webp" },
+  { name: "GNA-CI Assurances", logo: "/images/partners/logo_gna.png" },
 ];
 
 export const references = [
-  "AFRIQOIL",
-  "S.A.R.C.I SA",
-  "N.T.D.P",
-  "SIVOIRCO",
+  {
+    name: "QT Quang Thien Imexnt",
+    logo: "/images/references/logo_qti.jpg",
+  },
+  { name: "L.C.C", logo: "/images/references/logo_lcc.jpeg" },
+  {
+    name: "Ivry Drilling & Resources",
+    logo: "/images/references/logo_ivry.jpeg",
+  },
+  { name: "K2M Finances", logo: "/images/references/logo_k2m_finances.png" },
+  {
+    name: "Côte d'Ivoire Cables",
+    logo: "/images/references/logo_ci_cables.png",
+  },
+  { name: "S.A.R.C.I SA", logo: "/images/references/logo_sarci.png" },
+  { name: "UPO", logo: "/images/references/logo_upo.jpeg" },
+  { name: "AMAT-CI", logo: "/images/references/logo_amat-ci.jpeg" },
+  { name: "AXD Services", logo: "/images/references/logo_axd_services.png" },
+  { name: "SIVOIRCO", logo: "/images/references/logo_sivoirco.png" },
+  {
+    name: "CYRIAN International",
+    logo: "/images/references/cyrian_international.png",
+  },
+  { name: "ICPW", logo: "/images/references/logo_icpw.jpeg" },
+  { name: "S3C", logo: "/images/references/logo_s3c.png" },
+  { name: "André", logo: "/images/references/logo_andre.png" },
 ];
 
 export const stats = [
@@ -540,7 +560,8 @@ export const faqGeneral = [
       "Un courtier est un intermédiaire indépendant qui travaille pour vous, l'assuré. Contrairement à un agent d'assurance qui représente une compagnie, le courtier compare les offres de plusieurs assureurs pour vous trouver la meilleure couverture au meilleur prix.",
   },
   {
-    question: "Pourquoi passer par IACC plutôt que directement par un assureur ?",
+    question:
+      "Pourquoi passer par IACC plutôt que directement par un assureur ?",
     answer:
       "IACC vous fait gagner du temps en comparant les offres de 7+ partenaires. Nous négocions pour vous les meilleures conditions et vous accompagnons de A à Z, notamment en cas de sinistre où nous défendons vos intérêts.",
   },

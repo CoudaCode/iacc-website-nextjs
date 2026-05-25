@@ -1,7 +1,7 @@
 "use client";
 
-import { ServicePageTemplate } from "@/components/animations/service-page-template";
 import { colors } from "@/components/animations";
+import { ServicePageTemplate } from "@/components/animations/service-page-template";
 import { services } from "@/lib/constants/services";
 import { notFound } from "next/navigation";
 
@@ -15,7 +15,7 @@ interface ServicePageProps {
 const getServiceData = (slug: string) => {
   const serviceColors: Record<string, string> = {
     automobile: colors.services.automobile,
-    habitation: colors.services.habitation,
+    // habitation: colors.services.habitation,
     sante: colors.services.sante,
     vie: colors.services.epargne,
     professionnel: colors.services.professionnel,
@@ -24,7 +24,7 @@ const getServiceData = (slug: string) => {
 
   const serviceIcons: Record<string, string> = {
     automobile: "🚗",
-    habitation: "🏠", 
+    // habitation: "🏠",
     sante: "🏥",
     vie: "💰",
     professionnel: "💼",
@@ -49,18 +49,18 @@ const getServiceData = (slug: string) => {
           "Couverture de base",
           "Assistance 24h/24",
           "Devis gratuit",
-          "Service client dédié"
-        ]
+          "Service client dédié",
+        ],
       },
       {
         nom: "Formule Confort",
-        prix: "À partir de 80 000 FCFA", 
+        prix: "À partir de 80 000 FCFA",
         avantages: [
           "Couverture étendue",
           "Assistance premium",
           "Garanties supplémentaires",
-          "Franchise réduite"
-        ]
+          "Franchise réduite",
+        ],
       },
       {
         nom: "Formule Premium",
@@ -69,37 +69,38 @@ const getServiceData = (slug: string) => {
           "Couverture maximale",
           "Tous risques",
           "Service VIP",
-          "Franchise minimale"
-        ]
-      }
+          "Franchise minimale",
+        ],
+      },
     ],
     garanties: [
       {
         titre: "Protection Complète",
         description: "Couverture étendue pour tous vos besoins",
-        icon: "🛡️"
+        icon: "🛡️",
       },
       {
         titre: "Assistance 24h/24",
         description: "Support disponible à tout moment",
-        icon: "📞"
+        icon: "📞",
       },
       {
         titre: "Indemnisation Rapide",
         description: "Traitement accéléré de vos sinistres",
-        icon: "⚡"
-      }
+        icon: "⚡",
+      },
     ],
     audience: {
       titre: "À qui s'adresse cette assurance ?",
-      description: "Notre assurance est conçue pour répondre aux besoins de tous",
+      description:
+        "Notre assurance est conçue pour répondre aux besoins de tous",
       cibles: [
         "Particuliers et familles",
         "Professionnels et entreprises",
         "Jeunes conducteurs",
-        "Conducteurs expérimentés"
-      ]
-    }
+        "Conducteurs expérimentés",
+      ],
+    },
   };
 };
 
