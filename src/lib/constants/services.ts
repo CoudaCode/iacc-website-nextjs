@@ -79,7 +79,7 @@ export const services: Service[] = [
         ],
       },
       {
-        name: "Tiers Complète",
+        name: "Tiers Améliorées",
         description: "Une protection étendue pour plus de sérénité",
         features: [
           "Toutes garanties Tiers Simple",
@@ -87,13 +87,14 @@ export const services: Service[] = [
           "Vol d'accessoires",
           "Bris de glace",
           "Avance sur recours",
+          "Incendies",
         ],
       },
       {
         name: "Tous Risques",
         description: "La protection maximale pour véhicules récents (0-4 ans)",
         features: [
-          "Toutes garanties Tiers Complète",
+          "Toutes garanties Tiers Améliorées",
           "Dommages tous accidents",
           "Catastrophes naturelles",
           "Assistance 24h/24",
@@ -542,7 +543,7 @@ export const references = [
     logo: "/images/references/cyrian_international.png",
   },
   { name: "ICPW", logo: "/images/references/logo_icpw.jpeg" },
-  { name: "S3C", logo: "/images/references/logo_s3c.png" },
+  // { name: "S3C", logo: "/images/references/logo_s3c.png" },
   { name: "André", logo: "/images/references/logo_andre.png" },
 ];
 
