@@ -418,7 +418,7 @@ export const services: Service[] = [
     color: "bg-sky-500",
     coverages: [
       "Frais médicaux à l'étranger",
-      "Rapatriement sanitaire",
+      // "Rapatriement sanitaire",
       // "Annulation de voyage",
       // "Perte ou vol de bagages",
       // "Retard de vol",
@@ -437,10 +437,10 @@ export const services: Service[] = [
         description:
           "Couverture adaptée pour vos vacances et séjours à l'étranger.",
       },
-      {
-        title: "Étudiants",
-        description: "Assurance pour vos études ou stages à l'international.",
-      },
+      // {
+      //   title: "Étudiants",
+      //   description: "Assurance pour vos études ou stages à l'international.",
+      // },
     ],
     whyIACC: [
       "Couverture mondiale sans exclusion de destination",
@@ -451,12 +451,12 @@ export const services: Service[] = [
       {
         question: "Quand dois-je souscrire mon assurance voyage ?",
         answer:
-          "Idéalement dès la réservation de votre voyage pour bénéficier de la garantie annulation. Au plus tard avant le départ.",
+          "Nous vous recommandons de souscrire avant votre départ afin d'être couvert pendant toute la durée du séjour.",
       },
       {
-        question: "Les sports à risque sont-ils couverts ?",
+        question: "Quels déplacements sont concernés ?",
         answer:
-          "Certaines activités nécessitent une extension de garantie. Contactez-nous pour vérifier votre couverture.",
+          "Cette assurance s'adresse aux voyages professionnels et touristiques à l'étranger.",
       },
       {
         question: "Comment obtenir une assistance à l'étranger ?",

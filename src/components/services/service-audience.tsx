@@ -7,13 +7,18 @@ interface ServiceAudienceProps {
 }
 
 export function ServiceAudience({ service }: ServiceAudienceProps) {
+  const audienceLayout =
+    service.targetAudience.length <= 2
+      ? "mx-auto max-w-5xl md:grid-cols-2"
+      : "md:grid-cols-3";
+
   return (
     <section className="bg-gray-50 py-12 md:py-16">
       <div className="container mx-auto px-4">
         <h2 className="mb-8 font-extrabold text-2xl text-[#00516f] md:text-3xl">
           Pour qui ?
         </h2>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className={`grid gap-6 ${audienceLayout}`}>
           {service.targetAudience.map((audience, index) => (
             <Card
               key={index}

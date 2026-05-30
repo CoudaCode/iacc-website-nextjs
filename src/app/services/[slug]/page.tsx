@@ -7,7 +7,7 @@ import { ServiceFAQ } from "@/components/services/service-faq";
 import { ServiceFormulas } from "@/components/services/service-formulas";
 import { ServiceHero } from "@/components/services/service-hero";
 import { ServiceWhyIACC } from "@/components/services/service-why-iacc";
-import { services } from "@/lib/constants/services";
+import { services, type Service } from "@/lib/constants/services";
 import { notFound } from "next/navigation";
 import { motion } from "motion/react";
 import { useState } from "react";
@@ -30,7 +30,7 @@ export default async function ServicePage({ params }: PageProps) {
   );
 }
 
-function ServicePageWithAnimations({ service }: { service: any }) {
+function ServicePageWithAnimations({ service }: { service: Service }) {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   const handleMouseMove = (e: React.MouseEvent) => {
@@ -103,14 +103,16 @@ function ServicePageWithAnimations({ service }: { service: any }) {
         <ServiceAudience service={service} />
       </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.1 }}
-        viewport={{ once: true }}
-      >
-        <ServiceFormulas service={service} />
-      </motion.div>
+      {service.formulas && service.formulas.length > 0 && (
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          viewport={{ once: true }}
+        >
+          <ServiceFormulas service={service} />
+        </motion.div>
+      )}
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}
