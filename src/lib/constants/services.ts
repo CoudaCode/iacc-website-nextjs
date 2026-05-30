@@ -361,20 +361,20 @@ export const services: Service[] = [
     icon: Shield,
     color: "bg-indigo-500",
     coverages: [
-      "Dommages corporels causés à autrui",
-      "Dommages matériels",
-      "Préjudices dans l'entreprise",
+      // "Dommages causés à autrui",
+      "Dommages matériels causés à autrui",
+      // "Préjudices dans l'entreprise",
       "Préjudices hors entreprise (mission/chantier)",
-      "Responsabilité des salariés",
-      "Responsabilité des sous-traitants",
-      "Dommages causés par machines/outillages",
-      "Défense juridique",
+      // "Responsabilité des salariés",
+      // "Responsabilité des sous-traitants",
+      // "Dommages causés par machines/outillages",
+      // "Défense juridique",
     ],
     targetAudience: [
-      {
-        title: "Particuliers",
-        description: "Protection contre les accidents de la vie quotidienne.",
-      },
+      // {
+      //   title: "Particuliers",
+      //   description: "Protection contre les accidents de la vie quotidienne.",
+      // },
       {
         title: "Professionnels",
         description:
