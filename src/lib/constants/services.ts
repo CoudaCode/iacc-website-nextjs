@@ -419,12 +419,12 @@ export const services: Service[] = [
     coverages: [
       "Frais médicaux à l'étranger",
       "Rapatriement sanitaire",
-      "Annulation de voyage",
-      "Perte ou vol de bagages",
-      "Retard de vol",
-      "Responsabilité civile à l'étranger",
+      // "Annulation de voyage",
+      // "Perte ou vol de bagages",
+      // "Retard de vol",
+      // "Responsabilité civile à l'étranger",
       "Assistance 24h/24",
-      "Avance de fonds",
+      // "Avance de fonds",
     ],
     targetAudience: [
       {
@@ -440,41 +440,6 @@ export const services: Service[] = [
       {
         title: "Étudiants",
         description: "Assurance pour vos études ou stages à l'international.",
-      },
-    ],
-    formulas: [
-      {
-        name: "Essentielle",
-        description: "La couverture de base pour voyager sereinement",
-        features: [
-          "Frais médicaux jusqu'à 20 000 000 F CFA",
-          "Rapatriement sanitaire",
-          "Assistance 24h/24",
-        ],
-      },
-      {
-        name: "Confort",
-        description: "Une protection étendue pour plus de tranquillité",
-        features: [
-          "Frais médicaux jusqu'à 100 000 000 F CFA",
-          "Rapatriement sanitaire",
-          "Annulation de voyage",
-          "Bagages jusqu'à 1 000 000 F CFA",
-          "Assistance 24h/24",
-        ],
-      },
-      {
-        name: "Premium",
-        description: "La protection maximale pour les grands voyageurs",
-        features: [
-          "Frais médicaux illimités",
-          "Rapatriement sanitaire",
-          "Annulation toutes causes",
-          "Bagages jusqu'à 2 000 000 F CFA",
-          "Retard de vol",
-          "Responsabilité civile",
-          "Assistance 24h/24 premium",
-        ],
       },
     ],
     whyIACC: [
