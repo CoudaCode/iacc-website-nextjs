@@ -79,7 +79,7 @@ export const services: Service[] = [
         ],
       },
       {
-        name: "Tiers Améliorées",
+        name: "Tiers Améliorés",
         description: "Une protection étendue pour plus de sérénité",
         features: [
           "Toutes garanties Tiers Simple",
@@ -94,9 +94,9 @@ export const services: Service[] = [
         name: "Tous Risques",
         description: "La protection maximale pour véhicules récents (0-4 ans)",
         features: [
-          "Toutes garanties Tiers Améliorées",
+          "Toutes garanties Tiers Améliorés",
           "Dommages tous accidents",
-          "Catastrophes naturelles",
+          // "Catastrophes naturelles",
           "Assistance 24h/24",
         ],
       },
